@@ -1,4 +1,3 @@
-
 args <- commandArgs(trailingOnly = TRUE)
 SamplesFile <- args[1] 
 Samples_data <- read.table(SamplesFile, header = FALSE, stringsAsFactors = FALSE)

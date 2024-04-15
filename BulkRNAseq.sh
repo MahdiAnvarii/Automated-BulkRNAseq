@@ -22,7 +22,6 @@ ReadNamesFromFile "$SamplesFile"
 for name in "${names[@]}"; do
     echo "Processing $name"
     CleanedName=$(echo "${name}" | tr -d '[:space:]')
-    read kossher
 
     # Step 1 : QC - Run Fastqc
     # For Single-end read :
@@ -56,4 +55,5 @@ for name in "${names[@]}"; do
     echo "------------------------------------------------------------------------------------------------------------"
 done
 
+# Differential gene expression - Use DESeq2
 Rscript BulkRNAseq.R "$SamplesFile"
