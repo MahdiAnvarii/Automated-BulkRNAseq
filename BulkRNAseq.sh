@@ -30,9 +30,9 @@ for name in "${names[@]}"; do
     java -jar /home/mahdi/mydir/Packages/Trimmomatic-0.39/trimmomatic-0.39.jar SE -phred33 "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}.fastq" "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}_trimmed.fastq" ILLUMINACLIP:/home/mahdi/mydir/Packages/Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:8 LEADING:5 TRAILING:5 MINLEN:20
     fastqc "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}_trimmed.fastq" -o "/mnt/d/NGS/Samples/P3/Reads/"
     # For Paired-end read :
-    trimmomatic PE -phred33 "/mnt/d/zigene/P2/Reads/${CleanedName}_1.fastq" "/mnt/d/zigene/P2/Reads/${CleanedName}_2.fastq" "/mnt/d/zigene/P2/Reads/${CleanedName}_forward_paired.fastq" "/mnt/d/zigene/P2/Reads/${CleanedName}_forward_unpaired.fastq" "/mnt/d/zigene/P2/Reads/${CleanedName}_reverse_paired.fastq" "/mnt/d/zigene//P2/Reads/${CleanedName}_reverse_unpaired.fastq" ILLUMINACLIP:/home/mahdi/mydir/Packages/Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:8 LEADING:5 TRAILING:5 MINLEN:20
-    fastqc "/mnt/d/zigene/P2/Reads/${CleanedName}_forward_paired.fastq" -o "/mnt/d/zigene/P2/Reads/"
-    fastqc "/mnt/d/zigene/P2/Reads/${CleanedName}_reverse_paired.fastq" -o "/mnt/d/zigene/P2/Reads/"
+    trimmomatic PE -phred33 "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}_1.fastq" "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}_2.fastq" "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}_forward_paired.fastq" "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}_forward_unpaired.fastq" "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}_reverse_paired.fastq" "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}_reverse_unpaired.fastq" ILLUMINACLIP:/home/mahdi/mydir/Packages/Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10:8 LEADING:5 TRAILING:5 MINLEN:20
+    fastqc "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}_forward_paired.fastq" -o "/mnt/d/NGS/Samples/P3/Reads/"
+    fastqc "/mnt/d/NGS/Samples/P3/Reads/${CleanedName}_reverse_paired.fastq" -o "/mnt/d/NGS/Samples/P3/Reads/"
 
     # Step 3 : Map to reference - Use Hisat2
     echo "Running Hisat2"
