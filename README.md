@@ -2,14 +2,14 @@
  This repository provides scripts to automate bulk RNA-seq analysis.
  
  ### USAGE ###
- -Costumize your own Samples.txt
- -Run BulkRNAseq.R
- -Enter Samples.txt as the input
+ -Costumize your own Samples.txt  
+ -Run BulkRNAseq.sh  
+ -Enter Samples.txt as the input  
  
  ### Costumization ###
- You have to set your own Samples.txt file based on your desired input fastq files and the label that
- each sample has for diffrantial gene expression.
- its a normal text file that each line contains the name of a sample and its label separated by tab just like this:
+ You have to set your own Samples.txt file based on your desired input fastq files and the label that  
+ each sample has for diffrantial gene expression.  
+ its a normal text file that each line contains the name of a sample and its label separated by tab just like this:  
  ERR188044       YRI
  ERR188104       YRI
  ERR188234       YRI
