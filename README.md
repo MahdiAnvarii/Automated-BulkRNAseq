@@ -11,6 +11,7 @@ This repository provides scripts to automate bulk RNA-seq analysis.
  ERR188383       GBR  
 
  2.Run BulkRNAseq.sh: Execute the BulkRNAseq.sh script.  
+ 
  3.Enter Samples.txt as the input: Provide Samples.txt as the input when prompted.  
 
  ### Customization ### 
@@ -37,7 +38,9 @@ This repository provides scripts to automate bulk RNA-seq analysis.
 
  ### Keynotes ###  
  1.The shell script is designed to analyze both single-end and paired-end fastq files, so don't forget to comment out redundant lines based on your samples.  
+ 
  2.Specify all directories based on your file system path.  
+ 
  3.The R script needs to be in the same directory where the .count files exist.  
 
  ### Contact ### 
